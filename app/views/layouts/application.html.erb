@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>This is the shitSimpleApp</title>
+  <title>This is the shizzlle</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -20,7 +20,7 @@
       
       <%= link_to root_path, class: 'navbar-brand' do %>
           <i class="fa fa-users"></i>
-          Dev Match
+        Home Jeeves
       <% end %>
     </div>
     
@@ -28,12 +28,19 @@
       <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "about", about_path %></li>
             <li><%= link_to "stuff", stuff_path %></li>
+            <li><%= link_to "Contact Us", new_contact_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
 <div class='container'>
+  
+  <% flash.each do |key, value| %>
+  <%= content_tag :div, value, class:" alert alert-#{key}" %>
+  <%end%>
+  
 <%= yield %>
+
 </div>
 
 </body>
