@@ -30,6 +30,10 @@ gem 'bootstrap-sass', '3.3.1'
 #using font awesome library for icons
 
 gem 'font-awesome-sass', '4.2.0'
+
+gem 'devise', '3.4.1'
+
+
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 #gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
