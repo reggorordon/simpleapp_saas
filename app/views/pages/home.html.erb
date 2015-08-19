@@ -10,6 +10,9 @@
       <h2>Basic Membership</h2>
       <h4 >Sign up for free and get basic access to the community.</h4>
       <br/>
+      
+      <%# using instance variables as id @basic_plan %>
+
       <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
 
     </div>
@@ -22,4 +25,4 @@
     </div>
   </div>
 </div>
-</div>
+</div> 
