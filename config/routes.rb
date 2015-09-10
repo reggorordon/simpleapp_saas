@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { registrations: 'users/registrations' }
+  resources :users do
+    resource :profile
+  end
   resources:contacts
-  get '/login' => 'pages#login'
+
   get '/about' => 'pages#about'
   get '/stuff' => 'pages#stuff'
   root'pages#home'
