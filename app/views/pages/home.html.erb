@@ -2,7 +2,7 @@
 <div class="jumbotron text-center">
   <h1>Welcome to Reg Gordon</h1>
   <h3>Here is where I will make my plan for world domination</h3>
-  
+  <%= link_to "Create your profile!", new_user_profile_path(current_user) if current_user %>
 
 <div class="row">
   <div class="col-md-6">

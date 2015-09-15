@@ -39,6 +39,7 @@
             <li><%= link_to "about", about_path %></li>
             <li><%= link_to "stuff", stuff_path %></li>
             <li><%= link_to "Contact Us", new_contact_path %></li>
+            <li><%= link_to "Create your profile!", new_user_profile_path(current_user) if current_user %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
